@@ -10,6 +10,7 @@ impl PPM {
         return PPM {width: w, height: h, max: m, pixels: Vec::new()};
     }
 
+    #[allow(dead_code)]
     pub fn write_color(&self) {
         panic!("Not implemented!");
     }

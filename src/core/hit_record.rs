@@ -1,11 +1,12 @@
 use crate::math;
 use crate::core;
 
+#[allow(dead_code)]
 pub struct HitRecord {
-    p: math::Vec3,
-    n: math::Vec3,
-    mat: core::Material,
-    t: f32,
-    front_face: bool,
-    emmisive: bool
+    pub p: math::Vec3,
+    pub n: math::Vec3,
+    pub mat: core::Material,
+    pub t: f32,
+    pub front_face: bool,
+    pub emmisive: bool
 }
