@@ -25,8 +25,7 @@ impl Material {
 
 
     fn fresnel_schlick(ir: f64, cosTheta: f64) -> f64 {
-        let mut R0: f64 = (1.0 - ir) / (1.0 + ir);
-        R0 = R0.powf(2.0);
-        return R0 + (1.0 - R0) * (1.0 - cosTheta).powf(5.0);
+        let r0: f64 = ((1.0 - ir) / (1.0 + ir)).powf(2.0);
+        return r0 + (1.0 - r0) * (1.0 - cosTheta).powf(5.0);
     }
 }

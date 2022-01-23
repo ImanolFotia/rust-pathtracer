@@ -24,7 +24,7 @@ impl Sphere {
 }
 
 impl core::Primitive for Sphere {
-    fn hit(&self, _ray: core::Ray, _t_min: f32, _t_max: f32, record: core::HitRecord) -> bool {
+    fn hit(&self, _ray: core::Ray, _t_min: f32, _t_max: f32, _record: core::HitRecord) -> bool {
         println!("Called Sphere::hit");
         return true;
     }
